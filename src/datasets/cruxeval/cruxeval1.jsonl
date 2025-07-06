@@ -1,0 +1,3 @@
+{"code": "def f(nums):\n    output = []\n    for n in nums:\n        output.append((nums.count(n), n))\n    output.sort(reverse=True)\n    return output", "input": "[1, 1, 3, 1, 3, 1]", "output": "[(4, 1), (4, 1), (4, 1), (4, 1), (2, 3), (2, 3)]", "id": "sample_0"}
+{"code": "def f(a, b, c):\n    result = {}\n    for d in a, b, c:\n        result.update(dict.fromkeys(d))\n    return result", "input": "(1, ), (1, ), (1, 2)", "output": "{1: None, 2: None}", "id": "sample_1"}
+{"code": "def f(text):\n    new_text = list(text)\n    for i in '+':\n        if i in new_text:\n            new_text.remove(i)\n    return ''.join(new_text)", "input": "'hbtofdeiequ'", "output": "'hbtofdeiequ'", "id": "sample_2"}
